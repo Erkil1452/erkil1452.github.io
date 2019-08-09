@@ -1,0 +1,60 @@
+a#hp-index, a:link#hp-index, a:visited#hp-index {background: rgb(80%,85%,90%);}
+
+#content {
+	max-width: 1000px;
+}
+
+.publication {height: 100px;}
+.publicationsAuthors {font-style: italic;}
+.publicationsTitle {font-weight: bold;}
+.publicationsCitation {}
+.publication td:first-child img { margin: 10px;     
+-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.17);
+	-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.17);
+	box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.17);
+	}
+
+.publicationLinkText {padding-left: 5px; padding-right: 10px;}
+.videoIcon {background: transparent url('icons/Video.png') no-repeat top left; width: 20px; height: 22px;}
+.pdfIcon {background: transparent url('icons/PDF.png') no-repeat top left; width: 20px; height: 22px;}
+.bibTeXIcon {background: transparent url('icons/BibTeX.png') no-repeat top left; width: 20px; height: 22px;}
+.projectPageIcon {background: transparent url('icons/ProjectPage.png') no-repeat top left; width: 20px; height: 22px;}
+.publicationsCitation .note { font-style: italic; font-size: 85%; font-color: #444444; }
+
+h1 {
+	margin: 20px 0px 10px 0px;
+}
+.publicationsTitle a { color: #036; text-decoration: none;}
+.publicationsTitle a:hover { color: #06B;}
+table .year td { margin: 16px 14px 0px; padding: 4px; border: 2px solid rgb(67%, 76%, 84%); font-weight: bold; text-align: center; width: 100%; display: block }
+
+
+.clear, .clr{
+	    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    display: block;
+    clear: both;
+    font-size: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+	margin: 0 auto;
+}
+
+.slide-block {
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+
+.ex-links {
+	margin-left: 50px;
+	margin-top: 34px;
+}
+
+#content h4 { border: none; }
+
+.publicationsTitle .award { font-weight: bold; color: red; }
