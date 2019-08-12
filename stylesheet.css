@@ -58,3 +58,7 @@ table .year td { margin: 16px 14px 0px; padding: 4px; border: 2px solid rgb(67%,
 #content h4 { border: none; }
 
 .publicationsTitle .award { font-weight: bold; color: red; }
+
+.important {
+	font-size: 110%; font-weight: bold; color: red;
+}
