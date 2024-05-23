@@ -1,6 +1,9 @@
 
+
 body {
 	padding-top: 0px;
+	padding: 0px;
+	margin: 0px;
 }
 
 a#hp-index, a:link#hp-index, a:visited#hp-index {background: rgb(80%,85%,90%);}
@@ -27,7 +30,7 @@ a#hp-index, a:link#hp-index, a:visited#hp-index {background: rgb(80%,85%,90%);}
 .publicationsCitation .note { font-style: italic; font-size: 85%; font-color: #444444; }
 
 h1 {
-	margin: 20px 0px 10px 0px;
+	margin: 50px 0px 10px 0px;
 }
 .publicationsTitle a { color: #036; text-decoration: none;}
 .publicationsTitle a:hover { color: #06B;}
@@ -66,4 +69,15 @@ table .year td { margin: 16px 14px 0px; padding: 4px; border: 2px solid rgb(67%,
 
 .important {
 	font-size: 110%; font-weight: bold; color: red;
+}
+
+
+#main-menu-bar {
+	width: 100%;
+	background-color: blue;
+	padding: 0px;
+}
+
+#main-menu {
+	max-width: 1000px;
 }
