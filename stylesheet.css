@@ -74,8 +74,13 @@ svg:not(:root) {
 }
 
 h1 {
-	margin: 40px 0px 30px;
+	margin: 60px 0px 40px;
 }
+
+/* Compensate for the menu when jumping locally with #anchors */
+:target {
+	scroll-margin-top: 90px; /* Adjust this value to the height of your fixed header */
+  }
 
 h3 {
 	font-weight:normal;
