@@ -15,6 +15,45 @@
     transition: opacity .8s
 }
 
+svg:not(:root) {
+    overflow: hidden
+}
+
+
+.bg-blue {
+    background-color: #00a6d6
+}
+
+.bg-blue .readmore-content:focus:after,.bg-blue .readmore-content:hover:after {
+    color: #fff
+}
+
+.bg-blue .readmore-content:after {
+    background-color: #00a6d6;
+    color: #fff
+}
+
+.bg-blue .readmore-content:before {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,166,214,0)),to(#00a6d6));
+    background-image: linear-gradient(rgba(0,166,214,0),#00a6d6)
+}
+
+.text-hide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0
+}
+
+
+
+
+
+
 .cookieNotice.cookieNotice--active {
     opacity: 1
 }
@@ -202,9 +241,7 @@ img {
     border: 0
 }
 
-svg:not(:root) {
-    overflow: hidden
-}
+
 
 figure {
     margin: 1em 40px
@@ -791,16 +828,7 @@ body.development:after {
     text-align: center
 }
 
-.text-hide {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0
-}
+
 
 .center {
     float: none;
@@ -1309,7 +1337,7 @@ a.button:focus,button:focus,input:focus,select:focus,textarea:focus {
     border-right: 1px solid #ccc;
     border-top: 1px solid #ccc;
     color: #333;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue",Helvetica,"PT Sans", "Trebuchet MS",Arial,sans-serif;
     padding: 8px;
     padding-left: 0;
     padding-top: 2px;
@@ -1960,42 +1988,10 @@ optgroup {
     font-weight: 700
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0
-}
+
 
 .box,.card__content,.nav-carousel,.nav-inpage,.notice {
     padding: 1.46875rem
-}
-
-table td,table th {
-    padding: 5px 10px!important
-}
-
-table td.align-right {
-    text-align: right
-}
-
-table td.align-center {
-    text-align: center
-}
-
-table td.align-left {
-    text-align: left
-}
-
-table td.align-justify {
-    text-align: justify
-}
-
-table p:last-child {
-    margin-bottom: 0
-}
-
-input[type=search] {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box
 }
 
 .hide {
@@ -3133,7 +3129,7 @@ html {
 
 body {
     overflow-x: hidden;
-    font-family: Arial,sans-serif;
+    font-family: "PT Sans", "Trebuchet MS",Arial,sans-serif;
     font-weight: 400;
     line-height: 1.625;
     padding: 0;
@@ -3234,14 +3230,14 @@ figure figcaption {
 }
 
 .h1,.title-size--large,.title-size--medium,.title-size--small,h1 {
-    font-family: Arial,sans-serif;
+    font-family: "PT Sans", "Trebuchet MS",Arial,sans-serif;
     font-weight: 300;
     line-height: 1.3;
     font-size: 1.8125rem
 }
 
 .fontsLoaded .h1,.fontsLoaded .title-size--large,.fontsLoaded .title-size--medium,.fontsLoaded .title-size--small,.fontsLoaded h1 {
-    font-family: "Roboto Slab",Arial,sans-serif
+    font-family: "Roboto Slab","PT Sans", "Trebuchet MS",Arial,sans-serif
 }
 
 @media(min-width: 37.5em) {
@@ -3269,14 +3265,14 @@ figure figcaption {
 }
 
 .h2,h2 {
-    font-family: Arial,sans-serif;
+    font-family: "PT Sans", "Trebuchet MS",Arial,sans-serif;
     font-weight: 400;
     line-height: 1.625;
     font-size: 1.5rem
 }
 
 .fontsLoaded .h2,.fontsLoaded h2 {
-    font-family: "Roboto Slab",Arial,sans-serif
+    font-family: "Roboto Slab","PT Sans", "Trebuchet MS",Arial,sans-serif
 }
 
 @media(min-width: 37.5em) {
@@ -3286,14 +3282,14 @@ figure figcaption {
 }
 
 .h3,h3 {
-    font-family: Arial,sans-serif;
+    font-family: "PT Sans", "Trebuchet MS",Arial,sans-serif;
     line-height: 1.3;
     font-weight: 500;
     font-size: 1.3125rem
 }
 
 .fontsLoaded .h3,.fontsLoaded h3 {
-    font-family: "Roboto Slab",Arial,sans-serif
+    font-family: "Roboto Slab","PT Sans", "Trebuchet MS",Arial,sans-serif
 }
 
 a .h3,a h3 {
@@ -3302,17 +3298,17 @@ a .h3,a h3 {
 }
 
 .h4,h4 {
-    font-family: Arial,sans-serif;
+    font-family: "PT Sans", "Trebuchet MS",Arial,sans-serif;
     font-weight: 500;
     font-size: .9375rem
 }
 
 .fontsLoaded .h4,.fontsLoaded h4 {
-    font-family: "Roboto Slab",Arial,sans-serif
+    font-family: "Roboto Slab","PT Sans", "Trebuchet MS",Arial,sans-serif
 }
 
 .subtitle {
-    font-family: "Roboto Slab",Arial,sans-serif
+    font-family: "Roboto Slab","PT Sans", "Trebuchet MS",Arial,sans-serif
 }
 
 .contrast p {
@@ -3548,23 +3544,6 @@ a .h3,a h3 {
     color: #505050
 }
 
-.bg-blue {
-    background-color: #00a6d6
-}
-
-.bg-blue .readmore-content:focus:after,.bg-blue .readmore-content:hover:after {
-    color: #fff
-}
-
-.bg-blue .readmore-content:after {
-    background-color: #00a6d6;
-    color: #fff
-}
-
-.bg-blue .readmore-content:before {
-    background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,166,214,0)),to(#00a6d6));
-    background-image: linear-gradient(rgba(0,166,214,0),#00a6d6)
-}
 
 .bg--calcText {
     color: #fff
@@ -4894,7 +4873,7 @@ a .h3,a h3 {
     align-items: center;
     text-align: left;
     color: currentColor;
-    font-family: Arial,sans-serif
+    font-family: "PT Sans", "Trebuchet MS",Arial,sans-serif
 }
 
 .contrast .accordion__button:not(.btn) {
@@ -4990,7 +4969,7 @@ a .h3,a h3 {
 }
 
 .agenda__day {
-    font-family: Arial,sans-serif;
+    font-family: "PT Sans", "Trebuchet MS",Arial,sans-serif;
     font-weight: 300;
     float: left;
     color: #222;
@@ -4999,7 +4978,7 @@ a .h3,a h3 {
 }
 
 .fontsLoaded .agenda__day {
-    font-family: "Roboto Slab",Arial,sans-serif
+    font-family: "Roboto Slab","PT Sans", "Trebuchet MS",Arial,sans-serif
 }
 
 .agenda__content {
@@ -5025,14 +5004,14 @@ a .h3,a h3 {
 }
 
 .agenda .agenda__stopDay {
-    font-family: Arial,sans-serif;
+    font-family: "PT Sans", "Trebuchet MS",Arial,sans-serif;
     display: block;
     font-weight: 300;
     color: #222
 }
 
 .fontsLoaded .agenda .agenda__stopDay {
-    font-family: "Roboto Slab",Arial,sans-serif
+    font-family: "Roboto Slab","PT Sans", "Trebuchet MS",Arial,sans-serif
 }
 
 .agenda .agenda__row {
@@ -5281,7 +5260,7 @@ blockquote p:after {
     color: #fff;
     border: none;
     cursor: pointer;
-    font-family: "Roboto Slab",Arial,sans-serif;
+    font-family: "Roboto Slab","PT Sans", "Trebuchet MS",Arial,sans-serif;
     text-decoration: none;
     line-height: 1;
     -webkit-hyphens: auto;
@@ -10663,13 +10642,13 @@ blockquote p:after {
 }
 
 .fact .fact--value {
-    font-family: Arial,sans-serif;
+    font-family: "PT Sans", "Trebuchet MS",Arial,sans-serif;
     font-size: 3rem;
     font-weight: 100
 }
 
 .fontsLoaded .fact .fact--value {
-    font-family: "Roboto Slab",Arial,sans-serif
+    font-family: "Roboto Slab","PT Sans", "Trebuchet MS",Arial,sans-serif
 }
 
 .fact--header-black {
@@ -12181,7 +12160,7 @@ aside .hiddenSidebarContent.is-active {
 .highlight__subheader {
     font-size: 14px;
     line-height: 1.2;
-    font-family: "Roboto Slab",Arial,sans-serif
+    font-family: "Roboto Slab","PT Sans", "Trebuchet MS",Arial,sans-serif
 }
 
 .highlight--blue_lighter .highlight__subheader {
@@ -12273,7 +12252,7 @@ aside .hiddenSidebarContent.is-active {
 
 .highlight__quote .quote__text {
     margin: 0 0 1.46875rem;
-    font-family: "Roboto Slab",Arial,sans-serif;
+    font-family: "Roboto Slab","PT Sans", "Trebuchet MS",Arial,sans-serif;
     line-height: 1.6;
     font-weight: 500;
     text-align: center
@@ -12281,7 +12260,7 @@ aside .hiddenSidebarContent.is-active {
 
 .highlight__quote .quote__author,.highlight__quote .quote__function {
     margin-bottom: 0;
-    font-family: Arial,sans-serif;
+    font-family: "PT Sans", "Trebuchet MS",Arial,sans-serif;
     font-size: 1rem;
     line-height: 1.1;
     font-style: normal
@@ -13554,7 +13533,7 @@ aside .hiddenSidebarContent.is-active {
 }
 
 .nav-magazine-header {
-    font-family: Arial,sans-serif;
+    font-family: "PT Sans", "Trebuchet MS",Arial,sans-serif;
     font-size: 1.5rem;
     line-height: 1.3;
     font-weight: 600;
@@ -13562,7 +13541,7 @@ aside .hiddenSidebarContent.is-active {
 }
 
 .fontsLoaded .nav-magazine-header {
-    font-family: "Roboto Slab",Arial,sans-serif
+    font-family: "Roboto Slab","PT Sans", "Trebuchet MS",Arial,sans-serif
 }
 
 .nav-magazine-subheader {
@@ -13773,7 +13752,7 @@ aside .hiddenSidebarContent.is-active {
 .magazine-navigationCurrentPage {
     line-height: 1;
     margin-bottom: .5rem;
-    font-family: "Roboto Slab",Arial,sans-serif;
+    font-family: "Roboto Slab","PT Sans", "Trebuchet MS",Arial,sans-serif;
     font-weight: 700;
     font-size: .75rem
 }
@@ -15720,7 +15699,7 @@ a:hover+.nav-main__submenu,li:focus-within>.nav-main__submenu,li:hover>.nav-main
 }
 
 .nav-overlay__mainitem {
-    font-family: Arial,sans-serif;
+    font-family: "PT Sans", "Trebuchet MS",Arial,sans-serif;
     position: relative;
     cursor: pointer;
     -webkit-transition: color .2s cubic-bezier(.56, 0, 0, 1.6);
@@ -15736,7 +15715,7 @@ a:hover+.nav-main__submenu,li:focus-within>.nav-main__submenu,li:hover>.nav-main
 }
 
 .fontsLoaded .nav-overlay__mainitem {
-    font-family: "Roboto Slab",Arial,sans-serif
+    font-family: "Roboto Slab","PT Sans", "Trebuchet MS",Arial,sans-serif
 }
 
 @media(min-width: 37.5em) {
@@ -16036,7 +16015,7 @@ li.is-active .nav-overlay__toggle:after {
 .nav-top {
     top: 0;
     z-index: 999;
-    width: 100%
+    width: 100%;
     position: fixed;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -18595,7 +18574,7 @@ li.is-active .nav-overlay__toggle:after {
 
 .poster h1 {
     font-size: 1.8125rem;
-    font-family: Arial,sans-serif;
+    font-family: "PT Sans", "Trebuchet MS",Arial,sans-serif;
     line-height: 1.4;
     font-weight: 400;
     position: relative;
@@ -18627,7 +18606,7 @@ li.is-active .nav-overlay__toggle:after {
 }
 
 .fontsLoaded .poster h1 {
-    font-family: "Roboto Slab",Arial,sans-serif
+    font-family: "Roboto Slab","PT Sans", "Trebuchet MS",Arial,sans-serif
 }
 
 .poster .i-video_play:before {
@@ -18856,7 +18835,7 @@ li.is-active .nav-overlay__toggle:after {
         border: 0;
         border-radius: 0;
         color: #00a6d6;
-        font-family: Arial,sans-serif
+        font-family: "PT Sans", "Trebuchet MS",Arial,sans-serif
     }
 
     .presentation__controls:not(.presentation__controls--buttons) .slick-dots button:focus,.presentation__controls:not(.presentation__controls--buttons) .slick-dots button:hover {
@@ -19143,7 +19122,7 @@ a .profile h2 {
 
 .profileHeader-heading {
     font-size: 1.8125rem;
-    font-family: Arial,sans-serif;
+    font-family: "PT Sans", "Trebuchet MS",Arial,sans-serif;
     display: none;
     line-height: 1.4;
     padding-top: 4.40625rem;
@@ -19177,7 +19156,7 @@ a .profile h2 {
 }
 
 .fontsLoaded .profileHeader-heading {
-    font-family: "Roboto Slab",Arial,sans-serif
+    font-family: "Roboto Slab","PT Sans", "Trebuchet MS",Arial,sans-serif
 }
 
 @media(min-width: 37.5em) {

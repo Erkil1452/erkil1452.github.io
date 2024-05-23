@@ -46,12 +46,6 @@ h2 {
 #contentblock{
   position:relative;
 }
-#content {
-  padding:20px 30px;
-  max-width: 92%;
-  margin: 0 auto;
-  text-align: left;
-}
 /*.page_content .item a{font-weight: bold}*/
 #content h3{font-weight:normal}
 #content h4{font-weight:normal}

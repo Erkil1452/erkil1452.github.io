@@ -10,6 +10,9 @@ a#hp-index, a:link#hp-index, a:visited#hp-index {background: rgb(80%,85%,90%);}
 
 #content {
 	max-width: 1000px;
+	padding:20px 30px;
+  	text-align: left;
+	margin: 3.75rem auto 0;
 }
 
 .publication {height: 100px;}
@@ -27,7 +30,7 @@ a#hp-index, a:link#hp-index, a:visited#hp-index {background: rgb(80%,85%,90%);}
 .pdfIcon {background: transparent url('icons/PDF.png') no-repeat top left; width: 20px; height: 22px;}
 .bibTeXIcon {background: transparent url('icons/BibTeX.png') no-repeat top left; width: 20px; height: 22px;}
 .projectPageIcon {background: transparent url('icons/ProjectPage.png') no-repeat top left; width: 20px; height: 22px;}
-.publicationsCitation .note { font-style: italic; font-size: 85%; font-color: #444444; }
+.publicationsCitation .note { font-style: italic; font-size: 85%; color: #444444; }
 
 h1 {
 	margin: 50px 0px 10px 0px;
@@ -48,14 +51,16 @@ table .year td { margin: 16px 14px 0px; padding: 4px; border: 2px solid rgb(67%,
     padding: 0;
 }
 
-#content {
-	margin: 0 auto;
-}
 
 .slide-block {
 	display: block;
 	float: left;
 	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.slide-block h1 {
+	margin: 0;
 }
 
 .ex-links {
